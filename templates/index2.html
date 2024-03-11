@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliminare Sunet</title>
+	<script src="https://kit.fontawesome.com/e069789699.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Eliminare Zgomot <i class="fa-regular fa-comment"> </i></h1>
+    </header>
+	
+    <main>
+        <form action="/upload" method="post" enctype="multipart/form-data">
+		
+			
+			
+            <label  for="file-upload" class="button-1">
+                <i class="fa-solid fa-folder-open"> </i> Choose your file
+            </label>
+            <input id="file-upload" type="file" name="file" accept=".mp3, .wav, .ogg"/>
+            <button  type="submit" class="button-1"><i class="fa-solid fa-cloud-arrow-up"> </i> Upload your file</button>
+          
+
+                
+
+        </form>
+    
+        {% if filename %}
+        <h2 class="text">Uploaded File Information</h2>
+            <p class="text" ><strong>File Name:</strong> {{ filename }} <strong>File Format:</strong> {{ file_format }}</p>
+        
+        <audio controls>
+            <source src="{{ url_for('static', filename='uploads/' + filename) }}" >
+            
+        </audio>
+           
+  
+        <p></p>
+		<form action="/proces" method="post">
+			
+            <button type="submit" class="button-1"><i class="fa-solid fa-brain"> </i> Process</button>
+        </form>
+		{% endif %}
+		
+		{% if filename %}
+		<p></p>
+		<audio controls>
+            <source src="{{ url_for('static', filename='process/result.wav') }}" >
+		</audio>
+			<h2 class="text">Output File Information</h2>
+			<p class="text" ><strong>File Name:</strong> {{ 'result.wav' }} <strong>File Format:</strong> {{ file_format }}</p>
+		{% endif %}
+		
+	
+    </main>
+	
+		<p></p>
+    <footer>
+        
+        <div class="echipa">
+        <h1>Team 7</h1>
+		</div>
+		<div class="mycontainer">
+
+			<div >
+			<img src="{{ url_for('static', filename='creators/creator1.jpg') }}" alt="Creator 1" class="creator-img">
+				<h2>Stoica Alexandru</h2>
+			</div>
+			  
+			<div >
+			<img src="{{ url_for('static', filename='creators/creator2.jpg') }}" alt="Creator 2" class="creator-img">
+				<h2>Danila Bogdan</h2>
+				
+			</div>
+			  
+			<div>
+			<img src="{{ url_for('static', filename='creators/creator3.jpg') }}" alt="Creator 3" class="creator-img">
+				<h2>Doloiu Mihnea</h2>
+				
+		
+			</div>
+			
+
+		</div>
+
+	</footer>
+</body>
+</html>

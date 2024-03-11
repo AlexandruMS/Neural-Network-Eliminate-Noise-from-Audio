@@ -1,0 +1,189 @@
+body {
+    background-color: #ffffff; 
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    height: 120px; 
+    background: linear-gradient(to bottom, #9becab, #00af40);
+    text-align: center;
+    padding-top: 20px; 
+    color: #fff;
+    font-size: 24px;
+    font-family: 'Lucida Handwriting', cursive;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2)
+}
+
+main {
+    text-align: center;
+    margin-top: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+    margin-top: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #dcdcdc; 
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    padding: 20px; 
+    width: 60%;
+    
+
+}
+
+.upload-btn, .process-btn {
+    background: linear-gradient(to bottom, #8cde9d, #00b643);
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+footer {
+    height: 320px; 
+    background: linear-gradient(to bottom, #7fe393, #00c046);
+    padding: 10px 0; 
+    text-align: center;
+}
+
+.creator-img {
+    width: 100px;
+    margin: 0 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2)
+}
+
+.footer-text {
+    margin-top: 5px; 
+}
+
+.input[type="file"] {
+    background-color: #39f600;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+input[type="file"] {
+    display: none;
+}
+.button-1 {
+  background-color: #06b703;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2)
+}
+
+.button-1:hover,
+.button-1:focus {
+  background-color: #41e132;
+}
+div.mycontainer {
+    width:100%;
+    overflow:auto;
+    color: #fff;
+    
+    font-family: 'Lucida Handwriting', cursive;
+  }
+div.mycontainer div {
+    width:33.3333333333333333333%;  
+    float:left;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+
+div.echipa{
+    color: #fff; 
+    font-family: 'Lucida Handwriting', cursive;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+text{
+    font-family: 'Lucida Handwriting', cursive;
+}
+
+header h1 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+}
+
+
+.upload-label {
+    display: inline-block;
+    cursor: pointer;
+}
+
+
+.upload-btn {
+    background: linear-gradient(to bottom, #ffd6e5, #ffb6c1);
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+}
+
+
+#file-upload {
+    display: none;
+}
